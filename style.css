@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #654ea3, #eaafc8);
+  color: #fff;
+  line-height: 1.6;
+  height: 200vh;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 15px 50px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff5500c4;
+}
+
+section {
+  padding: 100px 20px 50px;
+  min-height: 100vh;
+  background-color: black;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#home {
+  position: sticky;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image1 img {
+  margin-top: 50px;
+  width: 300px;
+  border-radius: 20%;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px #00f5d4;
+}
+
+.outline {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 130px;
+  height: fit-content;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  color: #fff;
+}
+
+
+.outline h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  font-style: normal;
+}
+
+.outline h2 {
+  font-size: 24px;
+  color: #80c1e7;
+}
+
+.outline p {
+  margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.outline a {
+  color: #fff;
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+  transition: 0.3s;
+  width: 10%;
+  border: 2px #ddd;
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 15px;
+
+}
+
+.outline a:hover {
+  background-color: #00f5d4;
+  color: #00000084;
+  transition: 0.3s;
+}
+
+#About {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.about1 {
+  max-width: 600px;
+  margin: 0 auto;
+  height: fit-content;
+  margin-left: -70vw;
+  margin-top: 20vh;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  color: #fff;
+}
+
+.about1 h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.image2 img {
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-left: 120vh;
+  width: 300px;
+  border-radius: 20%;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px #00f5d4;
+}
+
+.resume {
+  text-decoration: none;
+  margin: auto;
+  background-color: rgba(93, 255, 34, 0.436);
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.477);
+  margin-left: -165vh;
+  position: relative;
+  top: 420px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.resume:hover {
+  background-color: #4ca1af;
+}
+
+#Skill {
+
+  display: flex;
+}
+
+#tskill,
+#pskill {
+  position: relative;
+  top: 10vh;
+  width: 600px;
+  right: 1vh;
+  height: fit-content;
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+
+#Skill #tskill h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#pskill h2 {
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+#skill_bar {
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+
+  font-weight: bolder;
+  font-style: italic;
+
+}
+
+span {
+  margin-bottom: 20px;
+}
+
+#bar {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#progress {
+  background: linear-gradient(135deg, #a8bbce, #4ca1af);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 20px;
+}
+
+
+.certification {
+  width: 100%;
+  max-width: 900vw;
+  margin: auto;
+  margin-top: 160px;
+  margin-left: -100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 80px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 40px;
+
+}
+
+.certificate1,
+.certificate2,
+.certificate3 {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+
+}
+
+.topic {
+  position: relative;
+  left: 43vw;
+  bottom: 150px;
+}
+
+.certificate img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.certificate1 p,
+.certificate2 p,
+.certificate3 p {
+  margin-bottom: 20px;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+}
+
+.certificate1 a {
+
+  margin-top: 20px;
+  color: #fff;
+  background: #654ea3;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+}
+
+.certificate2 a {
+
+  position: relative;
+  top: 15px;
+  color: #fff;
+  background: #654ea3;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+}
+
+.certificate3 a {
+
+  position: relative;
+  top: 30px;
+  color: #fff;
+  background: #654ea3;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+}
+
+
+.certificate1 a:hover,
+.certificate2 a:hover,
+.certificate3 a:hover {
+  background: #ffffffb5;
+  color: #000;
+}
+
+.table {
+  max-width: 600px;
+  width: 400px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  position: relative;
+  top: 70px;
+
+}
+
+#contact_heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 337px;
+  padding: 10px;
+  margin-top: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button#submit {
+  background: rgba(0, 128, 0, 0.536);
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 120px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button#submit:hover {
+  background: #00c3ffda;
+  color: #000;
+  transition: 0.3s;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+@media (max-width:480px) and (max-width:990px) {
+
+  nav {
+    margin-left: -40px;
+  }
+
+  body {
+    height: max-content;
+  }
+
+  section {
+    min-height: 150vh;
+  }
+
+  .about1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45vh;
+    margin-top: 10vh;
+    margin-left: -1vw;
+  }
+
+  .about1 p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1vh;
+    width: 45vh;
+
+
+  }
+
+  .image2 img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2vw;
+    align-items: center;
+  }
+
+  #Skill {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40vw;
+    position: relative;
+    bottom: 7vh;
+  }
+
+  #bar {
+    width: 150px;
+  }
+
+  .topic {
+    position: relative;
+    bottom: 40vh;
+    left: 30vw;
+  }
+
+  #certification {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .certificate1 {
+    position: relative;
+    right: 20vw;
+    bottom: 20vh;
+  }
+
+  .certificate2 {
+    width: 250px;
+    position: relative;
+    right: 88vw;
+    top: 40vh;
+  }
+
+  .certificate3 {
+    position: relative;
+    right: 155vw;
+    top: 100vh;
+  }
+
+  .table {
+    position: relative;
+    top: 400px;
+    right: 67px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .image2 {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 2vh;
+    right: 85vh;
+  }
+
+  .about1 {
+    position: relative;
+    top: 50px;
+    left: 100vh;
+  }
+
+  .image1 {
+    position: relative;
+    left: 220px;
+  }
+
+  .certification {
+    display: flex;
+    margin-left: -35vh;
+  }
+
+  .certificate1 {
+    position: relative;
+    margin-left: 30px;
+  }
+
+  .certificate2 {
+    position: relative;
+    margin-left: -9vh;
+  }
+
+  .certificate3 {
+    position: relative;
+    margin-left: -9vh;
+  }
+}
